@@ -1,6 +1,6 @@
 component {
 
-	function getSettings() inject="coldbox:setting:maxmind" {}
+	function getSettings() provider="coldbox:setting:maxmind" {}
 
 	public function init() {
 		variables.serviceURL = "https://minfraud.maxmind.com/minfraud/v2.0/";
